@@ -1,4 +1,11 @@
-const fs = require("fs");
-const inquirer = require("inquirer");
-const jest = require("jest");
+class Manager {
+    constructor(name, id, email, officeNumber){
+        this.name = name;
+        this.id = id;
+        this.email= email;
+        this.officeNumber = officeNumber;
+    }
+}
+
+module.exports = Manager;
 
