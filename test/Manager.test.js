@@ -1,31 +1,19 @@
 const Manager = require("../team/Manager")
 
-test("I should be able to create an object by invoking Manager", () => {
-    const testObj = new Manager()
-    console.log(testObj)
-    expect(typeof testObj).toBe("object")
-})
-
-test("When I input a name it is stored in the object", () => {
-    const testObj = new Manager("Landon")
-
-    expect(testObj.name).toBe("Landon")
-})
-
-test("When I input a Id it is stored in the object", () => {
-    const testObj = new Manager("Landon",3)
-
-    expect(testObj.id).toBe(3)
-})
-
-test("When I input an email it is stored in the object", () => {
-    const testObj = new Manager("Landon", 3, "Landon.waddell@gmail.com")
-
-    expect(testObj.email).toBe("Landon.waddell@gmail.com")
-})
-
-test("When I input an office number it is stored in the object", () => {
-    const testObj = new Manager("Landon", 3, "Landon.waddell@gmail.com", 204)
-    
-    expect(testObj.officeNumber).toBe(204)
-})
+test("Can set office number via constructor argument", () => {
+    const testValue = 204;
+    const val = new Manager("Foo", 1, "test@test.com", testValue);
+    expect(val.officeNumber).toBe(testValue);
+  });
+  
+  test("getRole() should return \"Manager\"", () => {
+    const testValue = "Manager";
+    const val = new Manager("Foo", 1, "test@test.com", 204);
+    expect(val.getRole()).toBe(testValue);
+  });
+  
+  test("Can get office number via getOffice()", () => {
+    const testValue = 204;
+    const val = new Manager("Foo", 1, "test@test.com", testValue);
+    expect(val.getOfficeNumber()).toBe(testValue);
+  });
