@@ -1,6 +1,7 @@
 # Team Profile Generator  
 This app will help you generate a team profile by promoting the user a series of questions and generating the HTML. This is helpful if you want to add or remove team members from your website and build teams. There is a video showing how to use the app below.
-(https://drive.google.com/file/d/1JKEuT5Jsl-iJ6XcRGI7F9RomN7Lnl3fc/view)
+## Video instructions link
+https://drive.google.com/file/d/1JKEuT5Jsl-iJ6XcRGI7F9RomN7Lnl3fc/view
 ## Table of Contents:
 * [Installation](#installation)
 * [Usage](#usage)
