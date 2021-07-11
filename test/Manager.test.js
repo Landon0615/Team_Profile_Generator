@@ -1,19 +1,19 @@
 const Manager = require("../team/Manager")
 
-test("Can set office number via constructor argument", () => {
-    const testValue = 204;
-    const val = new Manager("Foo", 1, "test@test.com", testValue);
-    expect(val.officeNumber).toBe(testValue);
+ex("Can set office number via constructor argument", () => {
+    const exValue = 204;
+    const val = new Manager("Example", 1, "ex@ex.com", exValue);
+    expect(val.officeNumber).toBe(exValue);
   });
   
-  test("getRole() should return \"Manager\"", () => {
-    const testValue = "Manager";
-    const val = new Manager("Foo", 1, "test@test.com", 204);
-    expect(val.getRole()).toBe(testValue);
+  ex("getRole() should return \"Manager\"", () => {
+    const exValue = "Manager";
+    const val = new Manager("Example", 1, "ex@ex.com", 204);
+    expect(val.getRole()).toBe(exValue);
   });
   
-  test("Can get office number via getOffice()", () => {
-    const testValue = 204;
-    const val = new Manager("Foo", 1, "test@test.com", testValue);
-    expect(val.getOfficeNumber()).toBe(testValue);
+  ex("Can get office number via getOffice()", () => {
+    const exValue = 204;
+    const val = new Manager("Example", 1, "ex@ex.com", exValue);
+    expect(val.getOfficeNumber()).toBe(exValue);
   });
