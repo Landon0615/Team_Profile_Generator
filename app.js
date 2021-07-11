@@ -2,6 +2,7 @@ const generateHTML = require('./generateHTML');
 
 const inquirer = require("inquirer");
 const fs = require("fs");
+
 const Engineer = require("./team/Engineer");
 const Intern = require("./team/Intern");
 const Manager = require("./team/Manager");
